@@ -14,10 +14,10 @@ in each of the Lab folders, there is a project called solution edit this to chna
 Remember to put the class files in the root of the labfolder first.
 
 ## TODO
-[x] Lab 1 - Approved
-[x] Lab 2 - Approved
-[x] Lab 3 - Approved
-[ ] Lab 4 - Approved
-[X] Lab 5 - Approved
-[ ] Lab 6 - Approved
+- [x] Lab 1 - Approved
+- [x] Lab 2 - Approved
+- [x] Lab 3 - Approved
+- [ ] Lab 4 - Approved
+- [x] Lab 5 - Approved
+- [ ] Lab 6 - Approved
 
