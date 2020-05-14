@@ -15,6 +15,15 @@ public class Point{
         return Math.sqrt(Math.pow(other.x-x,2)+ Math.pow(other.y-y,2));
     }
 
+    int getX()
+    {
+        return x;
+    }
+
+    int getY()
+    {
+        return y;
+    }
     @Override
     public String toString()
     {
