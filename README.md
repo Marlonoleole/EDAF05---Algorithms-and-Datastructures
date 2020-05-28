@@ -17,7 +17,7 @@ Remember to put the class files in the root of the labfolder first.
 - [x] Lab 1 - Approved
 - [x] Lab 2 - Approved
 - [x] Lab 3 - Approved
-- [ ] Lab 4 - Approved
+- [x] Lab 4 - Approved
 - [x] Lab 5 - Approved
 - [ ] Lab 6 - Approved
 
