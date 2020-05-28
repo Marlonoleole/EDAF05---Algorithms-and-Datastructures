@@ -21,6 +21,8 @@ public class FordFulgerson2 {
                      q.add(node);
                      parents[node] = current;
                      visited[node] = true;
+                     if(node == sink)
+                         return visited[sink] == true;
                  }
              }
          }
