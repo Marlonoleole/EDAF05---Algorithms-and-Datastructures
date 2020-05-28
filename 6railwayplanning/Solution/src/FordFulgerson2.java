@@ -1,8 +1,10 @@
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Map;
 import java.util.Queue;
 
 public class FordFulgerson2 {
-    boolean bfs(int graph [][], int sink, int source, int parents[], int nbrNodes)
+    boolean bfs(int graph [][], int sink, int source, int parents[], int nbrNodes, Map<Integer, ArrayList<Integer>> neighbours)
     {
         boolean visited [] = new boolean[nbrNodes];
 
@@ -14,7 +16,7 @@ public class FordFulgerson2 {
          {
              int current = q.poll();
 
-             for(int node=0; node<nbrNodes; ++node)
+             for(int node : neighbours.get(current))
              {
                  if(!visited[node] && graph[current][node]>0)
                  {
@@ -29,7 +31,7 @@ public class FordFulgerson2 {
          return visited[sink] == true;
     }
 
-    public int FordFulgerson(int graph[][], int source, int sink, int nbrNodes)
+    public int FordFulgerson(int graph[][], int source, int sink, int nbrNodes, Map<Integer, ArrayList<Integer>> neigbhours)
     {
         int maxFlow = 0;
         int residuals [][] = new int [nbrNodes][nbrNodes];
@@ -38,7 +40,7 @@ public class FordFulgerson2 {
 
         int [] parents = new int[nbrNodes];
 
-        while (bfs(residuals, sink, source, parents, nbrNodes))
+        while (bfs(residuals, sink, source, parents, nbrNodes, neigbhours))
         {
             int currentFlow = Integer.MAX_VALUE;
 
