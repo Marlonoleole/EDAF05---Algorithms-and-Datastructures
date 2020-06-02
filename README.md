@@ -24,5 +24,5 @@ The newest one is usually the one with the highest numer attached to it.
 - [x] Lab 3 - Approved
 - [x] Lab 4 - Approved
 - [x] Lab 5 - Approved
-- [ ] Lab 6 - Approved
+- [x] Lab 6 - Approved
 
